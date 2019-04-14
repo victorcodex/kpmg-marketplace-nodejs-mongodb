@@ -1,0 +1,485 @@
+{
+	"id": "4577eb8c-0893-4c68-a5f0-024827eaf8f5",
+	"name": "KPMG-test",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [],
+	"folders_order": [
+		"9606648a-c861-4bc5-823a-8d637c078026",
+		"26bc7d9b-d5a2-4438-8fe5-ea8c4ce188a7",
+		"91d4a02d-e981-4edb-8cea-0d9433181eff"
+	],
+	"folders": [
+		{
+			"id": "26bc7d9b-d5a2-4438-8fe5-ea8c4ce188a7",
+			"name": "products",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "4577eb8c-0893-4c68-a5f0-024827eaf8f5",
+			"folder": null,
+			"order": [
+				"1c2f431a-121a-45e5-b904-366c9731f966",
+				"3e4fbdec-bcfd-4113-98fc-c385427e1200",
+				"61f30d09-5b89-49c4-8f4e-3a8301f10266",
+				"e3f788bb-8f27-4341-9d63-963562268fda",
+				"ddca6e37-5e07-4d96-bf3f-ed2bea26ce23"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "9606648a-c861-4bc5-823a-8d637c078026",
+			"name": "users",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "4577eb8c-0893-4c68-a5f0-024827eaf8f5",
+			"folder": null,
+			"order": [
+				"0ee673f3-4947-41da-ba7b-7a5361ffbad8",
+				"1d607b09-4fc4-4b07-abc6-fef35e93203b",
+				"f7fe4ea3-12a4-4dcc-a06d-2f5566ba8f27",
+				"c96ef426-2807-4fb1-92f3-d8823fd1dc6a",
+				"39122014-f9cd-4d45-9c03-d421218353b7"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "91d4a02d-e981-4edb-8cea-0d9433181eff",
+			"name": "wallet",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "4577eb8c-0893-4c68-a5f0-024827eaf8f5",
+			"folder": null,
+			"order": [
+				"cd041221-1e60-4f04-9305-8b9197c6978c",
+				"a8013523-b521-4083-a85a-5075c53848a1",
+				"6cfbd2fc-aaf0-4451-b9a0-bcb1264728bc",
+				"7b0b68b4-a287-4607-bcfc-aadbd99861e3",
+				"1885da76-cbfb-46c0-966c-1df3f7e6fe6e",
+				"e7eab27a-4d9a-4937-abcf-9f13473a55e3",
+				"2f5cd139-c4de-4970-aed4-5e21f7c70aaf",
+				"13b0cbc7-22ca-4030-bc6f-ac21c3df7a01"
+			],
+			"folders_order": []
+		}
+	],
+	"requests": [
+		{
+			"id": "0ee673f3-4947-41da-ba7b-7a5361ffbad8",
+			"name": "Get all users",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/users",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9606648a-c861-4bc5-823a-8d637c078026",
+			"rawModeData": "{\n\t\"firstname\": \"Victor\", \n\t\"lastname\": \"Ifeanyi\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "13b0cbc7-22ca-4030-bc6f-ac21c3df7a01",
+			"name": "Get wallet transaction by Product id",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/wallet/product/5cb2fe1e68d8f039e2f12cd8",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "91d4a02d-e981-4edb-8cea-0d9433181eff",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "1885da76-cbfb-46c0-966c-1df3f7e6fe6e",
+			"name": "Get wallet transaction by id",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/wallet/5cb31f7487b3173f5d3ad484",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "91d4a02d-e981-4edb-8cea-0d9433181eff",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "1c2f431a-121a-45e5-b904-366c9731f966",
+			"name": "Add product",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/product",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "26bc7d9b-d5a2-4438-8fe5-ea8c4ce188a7",
+			"rawModeData": "{\n    \"title\": \"Plasma TV\",\n    \"description\": \"Have a better view of your world\",\n    \"addedByUser\": \"5cb2fc8f3b993139c8aab2f3\",\n    \"price\": 120000\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1d607b09-4fc4-4b07-abc6-fef35e93203b",
+			"name": "Get user by id",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/user/5cb2fc8f3b993139c8aab2f3",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "9606648a-c861-4bc5-823a-8d637c078026",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "2f5cd139-c4de-4970-aed4-5e21f7c70aaf",
+			"name": "Get wallet transaction by User id",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/wallet/user/5cb2fc8f3b993139c8aab2f3",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "91d4a02d-e981-4edb-8cea-0d9433181eff",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "39122014-f9cd-4d45-9c03-d421218353b7",
+			"name": "Delete user",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/user",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "9606648a-c861-4bc5-823a-8d637c078026",
+			"rawModeData": "{\n\t\"_id\": \"5cb3083ac5d83f3b50f1eb7f\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3e4fbdec-bcfd-4113-98fc-c385427e1200",
+			"name": "Update product",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/product",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "26bc7d9b-d5a2-4438-8fe5-ea8c4ce188a7",
+			"rawModeData": "{\n\t\"_id\": \"5cb2fe3968d8f039e2f12cd9\",\n\t\"title\": \"Fridge\",\n\t\"description\": \"I love it chill\",\n\t\"addedByUser\": \"5cb2fcab3b993139c8aab2f4\",\n\t\"price\": 80000\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "61f30d09-5b89-49c4-8f4e-3a8301f10266",
+			"name": "Get all products",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/products",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "26bc7d9b-d5a2-4438-8fe5-ea8c4ce188a7",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "6cfbd2fc-aaf0-4451-b9a0-bcb1264728bc",
+			"name": "Update wallet transaction",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/wallet",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ca5a2745-8c94-4236-8dfd-2071081f5bf7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"folder": "91d4a02d-e981-4edb-8cea-0d9433181eff",
+			"rawModeData": "{\n\t\"_id\": \"5cb34112a4984d47a9baa4b8\",\n    \"transactionType\": \"WALLET_FUNDING\",\n    \"transactionByUser\": \"5cb2fcab3b993139c8aab2f4\",\n    \"product\": null,\n    \"description\": \"User Wallet Funding\",\n    \"currentBalance\": 800000,\n    \"amount\": 800000\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7b0b68b4-a287-4607-bcfc-aadbd99861e3",
+			"name": "Get all wallet transactions",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/wallets",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "91d4a02d-e981-4edb-8cea-0d9433181eff",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "a8013523-b521-4083-a85a-5075c53848a1",
+			"name": "Fund wallet",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/wallet",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0267457d-6989-4ec4-b706-c0d83f6c23de",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"folder": "91d4a02d-e981-4edb-8cea-0d9433181eff",
+			"rawModeData": "{\n    \"transactionType\": \"WALLET_FUNDING\",\n    \"transactionByUser\": \"5cb2fcab3b993139c8aab2f4\",\n    \"product\": null,\n    \"description\": \"Fund Wallet\",\n    \"amount\": 1000000\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c96ef426-2807-4fb1-92f3-d8823fd1dc6a",
+			"name": "Update user",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/user",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "9606648a-c861-4bc5-823a-8d637c078026",
+			"rawModeData": "{\n\t\"_id\": \"5cb2fcab3b993139c8aab2f4\",\n    \"firstname\": \"Henry - Updated\",\n    \"lastname\": \"Kent\",\n    \"email\": \"henry@gmail.com\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "cd041221-1e60-4f04-9305-8b9197c6978c",
+			"name": "Purchase product transaction",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/wallet",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0267457d-6989-4ec4-b706-c0d83f6c23de",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"folder": "91d4a02d-e981-4edb-8cea-0d9433181eff",
+			"rawModeData": "{\n    \"transactionType\": \"PURCHASE\",\n    \"transactionByUser\": \"5cb2fcab3b993139c8aab2f4\",\n    \"product\": \"5cb2fe5068d8f039e2f12cda\",\n    \"description\": \"Plasma TV purchase\",\n    \"amount\": 120000\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ddca6e37-5e07-4d96-bf3f-ed2bea26ce23",
+			"name": "Delete product",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/product",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "26bc7d9b-d5a2-4438-8fe5-ea8c4ce188a7",
+			"rawModeData": "{\n\t\"_id\": \"5cb2fe0068d8f039e2f12cd7\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e3f788bb-8f27-4341-9d63-963562268fda",
+			"name": "Get product by id",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/product/5cb2fe3968d8f039e2f12cd9",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "26bc7d9b-d5a2-4438-8fe5-ea8c4ce188a7",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "e7eab27a-4d9a-4937-abcf-9f13473a55e3",
+			"name": "Delete wallet transaction",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/wallet",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "91d4a02d-e981-4edb-8cea-0d9433181eff",
+			"rawModeData": "{\n\t\"_id\": \"5cb341eec9dee248aaba4f47\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f7fe4ea3-12a4-4dcc-a06d-2f5566ba8f27",
+			"name": "Add user",
+			"url": "https://kpmg-marketplace.herokuapp.com/api/user",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "9606648a-c861-4bc5-823a-8d637c078026",
+			"rawModeData": "{\n\t\"firstname\": \"Henry\",\n\t\"lastname\": \"Kent\",\n\t\"email\": \"henry@gmail.com\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
