@@ -41,4 +41,4 @@ DELETE - localhost:5000/api/product/_id
 DELETE - localhost:5000/api/wallet/_id
 
 
-# A postman collection is available for this project
+# A postman collection is available for this project - get it from the root directory

@@ -82,7 +82,7 @@ module.exports = (app) => {
 
             if(err) return res.send( { status: 500, message: err});
 
-            if(wallet) getUserCurrentBalance = wallet[0]['currentBalance']; // get user wallet balance
+            if(wallet[0]) getUserCurrentBalance = wallet[0]['currentBalance']; // get user wallet balance
 
             switch (req.body.transactionType) {
 
