@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
-let Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
+const configValues = require('../config/config');
 
 const WalletSchema = new Schema({
     transactionType: {
         type: String,
         required: 'Transaction Type is required',
-        enum: ['WALLET_FUNDIND', 'PURCHASE'],
+        enum: [configValues.WALLET_FUNDING_TRANSACTION, configValues.PURCHASE_TRANSACTION],
         max: 50
     },
     transactionByUser : { type: Schema.Types.ObjectId, ref: 'User' },

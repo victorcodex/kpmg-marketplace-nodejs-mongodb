@@ -1,4 +1,7 @@
 {
 	"DB_username": "testuser1",
-	"DB_password": "testuser1"
+	"DB_password": "testuser1",
+	"WALLET_FUNDING_TRANSACTION": "WALLET_FUNDING",
+	"PURCHASE_TRANSACTION": "PURCHASE",
+	"INSUFFICIENT_BALANCE": "Insufficient wallet balance, kindly fund your wallet and try again"
 }
